@@ -1,0 +1,139 @@
+﻿* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #FFC0CB;
+    padding: 20px;
+    font-family: Arial;
+}
+
+section {
+max-width: 1000px;
+margin: auto;/* сайт в центре окна браузера */
+}
+
+h1 {
+float:left;
+}
+
+.nav {
+float:right;
+
+}
+
+li {
+display: inline-block; /*переопределение в строку*/
+
+}
+
+.active a {
+background: #FFA07A;
+color: #ffffff;
+}
+
+a {
+display:block;
+padding: 10px 20px 10px 20px;
+font-family: 'Lato', sans-serif;
+font-size: 16px;
+
+}
+
+hr {
+clear:right;}
+
+.row {
+margin: 8px -16px; /*отступ сверху и снизу (первое значение)
+слева и справа (второе значение) от края браузера */
+}
+
+.row,
+.row > .column {
+    padding: 8px; /*  отступы между колонками */
+}
+
+.column {
+    float: left; /* каждая колонка обтекает друг друга слева */
+    width: 25%; /* каждая колонка занимает 25% от ряда */
+}
+
+ .row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.content {
+    background-color: #C0C0C0;
+    padding: 10px;
+}
+
+img {
+  width: 100%;
+}
+
+
+/*
+  height:200px;
+}
+
+*/
+
+form {
+widht: 100%;
+}
+
+input[name="text"],input[name="email"], textarea {
+widht: 40%;
+margin-left: 10px;
+margin-right: 20px;
+background-color: #FFA07A;
+color: Aqva;
+font-family:  Verdana, san-serif;
+font-size: 14px;
+font-style: italic;
+border: 2px; solid #cacaca;
+}
+
+
+input[name="submit"] {
+margin-left: 270px;
+background-color: #8FBC8F;
+font-size: 20px;
+}
+
+iframe {
+margin-left: 30px;
+margin-right: 50px;
+
+}
+
+
+/* Для добавления адаптивности
+используем указание на максимальную ширину экрана
+с помощью медиавыражения */
+
+@media screen and (max-width: 900px) {
+    .column {
+        width: 50%;
+    }
+
+	iframe {
+	width: 80%;
+	}
+}
+
+
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+
+	iframe {
+	width: 100%;
+	}
+
+}
+
+
